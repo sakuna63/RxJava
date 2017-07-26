@@ -2000,6 +2000,7 @@ public abstract class Maybe<T> implements MaybeSource<T> {
      * </dl>
      * @return the success value
      */
+    @Nullable
     @CheckReturnValue
     @SchedulerSupport(SchedulerSupport.NONE)
     public final T blockingGet() {
